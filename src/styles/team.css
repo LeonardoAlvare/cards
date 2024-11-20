@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .equipo-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .titulo-equipo {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .tarjetas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .tarjeta {
+    background-color: white;
+    border-radius: 15px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .imagen-tarjeta-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .imagen-tarjeta {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .tarjeta h2 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: black;
+  }
+  
+  .tarjeta p {
+    font-size: 1rem;
+    color: black;
+  }
+  
+
+  .detalle-miembro {
+    background-color: #222;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .detalle-miembro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .imagen-detalle-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+  
+  .imagen-detalle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .detalle-miembro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  .detalle-miembro strong {
+    color: #fff;
+  }
+  
