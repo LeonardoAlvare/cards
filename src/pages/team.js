@@ -12,14 +12,14 @@ function Team() {
         },
         {
             id: 2,
-            nombre: 'Alejandro Paez ',
+            nombre: 'Alejandro Paez',
             rol: 'Frontend Developer',
             descripcion: 'Specializes in creating user-friendly web interfaces and optimizing user experience using HTML, CSS, and JavaScript.',
             imagen: 'https://png.pngtree.com/png-clipart/20230914/original/pngtree-computer-programmer-png-image_12147261.png'
         },
         {
             id: 3,
-            nombre: 'Santiago Machacón ',
+            nombre: 'Fernando Mesino',
             rol: 'Frontend Developer',
             descripcion: 'Skilled in designing and developing engaging visual interfaces and ensuring responsive design for various devices.',
             imagen: 'https://png.pngtree.com/png-clipart/20230914/original/pngtree-computer-programmer-png-image_12147261.png'
