@@ -58,6 +58,74 @@
     border-bottom: 2px solid #7abf5a;
 }
 
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #193940;
+    transition: color 0.3s ease;
+    position: absolute; /* Fijar posición relativa al navbar */
+    right: 0; /* Empuja el icono completamente a la derecha */
+}
+
+.menu-icon:hover {
+    color: #7abf5a;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu.open {
+    transform: translateX(0); /* Deslizar dentro de la pantalla */
+}
+
+.mobile-menu button.close-menu {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #193940;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.mobile-menu button.close-menu:hover {
+    color: #7abf5a;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Centra los enlaces en el menú móvil */
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #193940;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu ul li a:hover {
+    color: #7abf5a;
+}
+
 @media (max-width: 768px) {
     .navbar-links {
         display: none;

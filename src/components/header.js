@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import '../styles/header.css';
 
 function Header() {
-    const [ setShowMenu] = useState(false);
+    const [ showMenu, setShowMenu ] = useState(false);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
 
     const closeMenu = () => {
         setShowMenu(false);
@@ -39,7 +43,40 @@ function Header() {
                         </Link>
                     </li>
                 </ul>
+                <div className="menu-icon" onClick={toggleMenu}>
+                    ☰
+                </div>
             </nav>
+
+            {showMenu && (
+                <div className={`mobile-menu ${showMenu ? 'open' : ''}`}>
+                    <button className="close-menu" onClick={closeMenu}>
+                        ✕
+                    </button>
+                    <ul>
+                        <li>
+                            <Link to="/home" onClick={closeMenu}>
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/about" onClick={closeMenu}>
+                                About Us
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/team" onClick={closeMenu}>
+                                Our Team
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/services" onClick={closeMenu}>
+                                Services & Products
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            )}
         </header>
     );
 }
